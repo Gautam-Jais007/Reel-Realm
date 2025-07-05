@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f5f5f5;
+}
+
+/* Navbar Styling */
+
+nav{
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.434);
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 18px 2%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo h1{
+    font-size: 30px;
+    color: #00ffff;
+    letter-spacing: 1px;
+    font-family: 'Italiana', sans-serif
+}
+
+/* SearchContainer input styling */
+
+.searchContainer form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.searchContainer input{
+    outline: none;
+    color: #2c3e50;
+    font-weight: 600;
+    padding: 10px 16px;
+    border: none;
+    font-size: 16px;
+    background: #ffffff;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.448);
+    border-radius: 30px;
+}
+
+.searchContainer input::placeholder{
+    font-weight: 550;
+    color: #888;
+    font-style: italic;
+}
+
+.searchContainer input:focus{
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+.searchContainer input:focus::placeholder{
+    color: #2c5364;
+}
+
+
+/* SearchButton Styling */
+
+.searchContainer button{
+  font-size: 15px;
+  background: none;
+  background-color: linear-gradient(to right, #00ffff, #2c5364);
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+  box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.706);
+}
+
+.searchContainer button:hover{
+    background: linear-gradient(to right, #2c5364, #00ffff);
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+.searchContainer button:active{
+    /* transform: scale(0.7); */
+    transform: rotate(15deg);
+    transition: 0.08s;
+}
+
+/* Main Styling */
+
+main{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px); 
+    background: radial-gradient(circle at top, #2c5364 0%, #0f2027 100%);
+    backdrop-filter: blur(4px);
+}
+
+section h2{
+    font-size: 50px;
+}
+
+.movieContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: #00ffff;
+}
+
+.moviePoster img {
+    width: 100%;
+    max-width: 300px;
+    max-height: max-content;
+    border-radius: 20px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.53);
+}
+
+.movieWrapper {
+    background: linear-gradient(235deg, #0f2027, #203a43, #2c5364);
+    color: #f5f5f5;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 1000px;
+    min-height: 400px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.movieInfo{
+    flex: 2;
+    min-width: 280px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #2c3e50;
+    font-size: 16px;
+    font-weight: 500;
+    background: linear-gradient(235deg, #15242d, #1e3440, #2a4454);
+    color: #f1f1f1;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.375);
+}
+
+.movieInfo p {
+    line-height: 1.6;
+}
+
+.movieInfo p strong {
+    color: #00ffffe4;
+    font-weight: 550;
+}
+
+.movieGenre{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    flex-wrap: flex;
+}
+
+.movieGenre p{
+    background-color: #1e657f;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.movieWrapper h2{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 750;
+    background: linear-gradient(90deg, #00ffff, #2291c0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+}
+
+
+/* footer styling */
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    padding: 8px;
+    color: #fff;
+    box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.572);
+    letter-spacing: 0.5px;
+    z-index: 999;
+    font-size: 12px;
+    text-align: center;
+    text-underline-offset: 5px;
+    font-family: 'Italiana', sans-serif;
+    font-size: 15px;
+}
+
+.madeBy{
+    font-weight: 530;
+    color: #f1f1f1;
+    text-align: center;
+}
+
+.gautam{
+    color: #00ffff;
+    font-weight: 700;
+    font-family: 'Italiana', sans-serif;
+}
+
+.heart{
+    color: #00ffff;
+}
+
+.github {
+    font-weight: 530;
+    color: #f1f1f1;
+}
+
+.github a,
+.github a:focus,
+.github a:active,
+.github a:visited,
+.github a:hover {
+    text-decoration: none;
+    background: none;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent; 
+}
+
+#gitIcon{
+    color: #00ffff;
+}
+
