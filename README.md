@@ -44,7 +44,7 @@ It fetches movie information from the **OMDb API** based on the user's search in
 
 1. Clone this repo  
    ```bash
-   git clone https://github.com/your-username/reel-realm.git
+   git clone https://github.com/Gautam-Jais007/reel-realm.git
 
 
 ## 👀 A Glimpse of the App
